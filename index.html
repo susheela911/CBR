@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrashekara Bharathi</title>
+    <style>
+        .container {
+    display: flex;
+  }
+  
+.static-content {
+    width: 1000px; 
+    position: sticky;
+    top:0;
+    color: rgb(15, 3, 50);
+    background-color: rgb(200, 178, 254);
+    margin: 10px;
+    height: 95vh;
+    padding: 10px;
+}
+  
+.scrollable-content {
+    /* Allow overflow for scrollable content */
+    overflow-y:scroll;
+    size: 200pt;
+    /* Flex grow to fill remaining space */
+    flex-grow: 1;
+}
+.row {
+  display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+} 
+.hob,.edu,.skills,.about{
+    background-color: rgb(200, 178, 254);
+    margin: 10px;
+    border: 2px rgb(33, 1, 62);
+    padding: 15px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:rgb(33, 1, 62);
+  color:white
+}
+
+.flip-box-back {
+  background-color:  rgb(140, 97, 239);
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static-content">
+         <img src="cbbr.jpeg" width="100%" height="300px">
+          <br>
+          <h1>Chandrashekara Bharathi B R</h1>
+          <h3>Registration NO : U01DB23M0006</h3>
+          <h3>Course : BBA ( Bachelors in Business Administration)</h3>
+          <h3>Email: Chandrashekarabharathi04@gmail.com</h3>
+          <h3>Phone number: 9896257924</h3><br>
+        </div>
+        <div class="scrollable-content">
+            <div class="about">
+        <h1>About me:</h1>
+          <p>I am Chandrashekar, persuing BBA in Christ College Mysore.
+            I am willing to lead if given an opportunity or follow instruction as a part of team. I have experience as concurrent auditor in SBI. An aspiring business student seeking an opportunity to work in an company where I can grow along with the company. Quick learner when approached with a new skill. Mathematical-minded and detail-oriented team player looking to work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.</p>
+        </div>
+            <div class="edu">
+                <h1>Education:</h1>
+                <div class="row">
+                <div class="column">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                     <p>SSLC</p>
+                     <img src="sslc.jpg" width="100%">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Delhi Public School, Sonipat, Haryana</h2>
+                        <p>1019-2020</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------------->
+                  <div class="column">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <p>PUC</p>
+                        <img src="puc.png" width="100%" height="230px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Delhi Public School, Mysore, Karnataka</h2>
+                            <p>2020-2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!----------------------------------------------------->
+                  <div class="column">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <p>BBA</p>
+                        <img src="BBA.jpeg" width="100%" height="230px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Christ College, Mysore, Karnataka</h2>
+                            <p>2022-2025</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            <div class="skills">
+                <h1>Skills:</h1>
+                <ul>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Powerpoint</li>
+                    <li>Microsoft Word</li>
+                    <li>Good Communication Skills</li>
+                    <li>Good Team player and Team leader</li>
+                	<li>Quick learner</li>
+                	<li>Flexible and quickly adaptable nature</li>
+                	<li>Problem solving</li>
+                </ul>
+            </div>
+            <div class="hob">
+                <h1>Hobbies:</h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 6</div>
+                      <img src="newpaper.jpeg" style="width:1000px; height:500px">
+                      <div class="text">Reading newspapers, novels</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="movies.jpg" style="width: 1000px; height:500px">
+                      <div class="text">Watching movies</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="cricket.jpg" style="width:1000px; height:500px">
+                      <div class="text">Playing games</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">4/ 6</div>
+                        <img src="guitar.jpg" style="width:1000px; height:500px">
+                        <div class="text">Playing Guitar</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="marathon.jpg" style="width:1000px; height:500px">
+                        <div class="text">Participating in Marathon</div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="stock.jpg" style="width:1000px; height:500px">
+                        <div class="text">Analysis of current market and stocks</div>
+                      </div>
+
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
